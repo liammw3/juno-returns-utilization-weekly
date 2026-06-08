@@ -3,48 +3,2135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Returns Utilization Report — Week of 2026-06-01</title>
+<title>Returns Utilization Report – 2026-06-08</title>
 <style>
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#F8F9FA;color:#1E1E1E}
-  .header{background:#013A2F;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:16px 24px}
-  .header h1{margin:0;font-size:20px;font-weight:700}
-  .header span{font-size:14px;opacity:0.85}
-  .container{padding:24px}
-  .filter-bar{margin-bottom:12px}
-  #filterInput{padding:8px 12px;border:1px solid #d1d5db;border-radius:6px;font-size:14px;width:280px}
-  table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.1);font-size:13px}
-  th{background:#013A2F;color:#fff;padding:10px 12px;text-align:left;font-weight:600;white-space:nowrap}
-  td{padding:9px 12px;border-bottom:1px solid #e5e7eb;vertical-align:middle}
-  tr:last-child td{border-bottom:none}
-  tr:hover td{background:#f0fdf4!important}
-  .footer{text-align:center;font-size:12px;color:#6b7280;margin-top:16px;padding-bottom:24px}
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F8F9FA; color: #1E1E1E; }
+  .header { background: #013A2F; color: white; padding: 18px 32px; display: flex; align-items: center; justify-content: space-between; }
+  .header h1 { font-size: 20px; font-weight: 700; letter-spacing: -0.3px; }
+  .header .week { font-size: 14px; opacity: 0.8; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 24px 16px; }
+  .meta { margin-bottom: 16px; color: #6B7280; font-size: 13px; }
+  .filter-bar { margin-bottom: 16px; }
+  #filterInput { width: 280px; padding: 8px 12px; border: 1px solid #D1D5DB; border-radius: 6px; font-size: 14px; outline: none; }
+  #filterInput:focus { border-color: #1CE49B; box-shadow: 0 0 0 3px rgba(28,228,155,0.15); }
+  .table-wrap { overflow-x: auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  table { width: 100%; border-collapse: collapse; background: white; }
+  thead tr { background: #013A2F; color: white; }
+  th { padding: 10px 12px; text-align: left; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; }
+  th:not(:first-child):not(:nth-child(2)) { text-align: center; }
+  td { border-bottom: 1px solid #F3F4F6; font-size: 14px; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+  .footer { text-align: center; padding: 24px 16px; color: #9CA3AF; font-size: 12px; }
 </style>
 </head>
 <body>
 <div class="header">
   <h1>Returns Utilization Report</h1>
-  <span>Week of 2026-06-01</span>
+  <span class="week">Week of 2026-06-08</span>
 </div>
 <div class="container">
+  <div class="meta">Showing top 138 of 552 active firms (top 25% by Δ used, then utilization)</div>
   <div class="filter-bar">
-    <input id="filterInput" onkeyup="filterTable()" placeholder="Filter by name..." type="text">
+    <input id="filterInput" onkeyup="filterTable()" placeholder="Filter by name…" type="text" autocomplete="off">
   </div>
-  <table id="mainTable">
-    <thead>
-      <tr><th>#</th><th>Company</th><th>&#916; Used</th><th>Used</th><th>&#916; Purchased</th><th>Purchased</th><th>Remaining</th><th>Utilization</th></tr>
-    </thead>
-    <tbody id="tableBody">
-      <tr class="data-row"><td>1</td><td>Common Cent$ Business</td><td>–</td><td>133</td><td>–</td><td>100</td><td>-33</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#B91C1C;width:100%;height:100%"></div></div><b>133.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>2</td><td>Allied Tax Advisors</td><td>–</td><td>101</td><td>–</td><td>100</td><td>-1</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#B91C1C;width:100%;height:100%"></div></div><b>101.0%</b></div></td></tr><tr class="data-row"><td>3</td><td>Edler Zain</td><td>–</td><td>101</td><td>–</td><td>100</td><td>-1</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#B91C1C;width:100%;height:100%"></div></div><b>101.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>4</td><td>Kelly R McDonald, CPA Cornerstone Professional Accountants, PC</td><td>–</td><td>165</td><td>–</td><td>165</td><td>0</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:100.0%;height:100%"></div></div><b>100.0%</b></div></td></tr><tr class="data-row"><td>5</td><td>McAdams Tax Group, LLC</td><td>–</td><td>100</td><td>–</td><td>100</td><td>0</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:100.0%;height:100%"></div></div><b>100.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>6</td><td>Proby Tax</td><td>–</td><td>102</td><td>–</td><td>102</td><td>0</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:100.0%;height:100%"></div></div><b>100.0%</b></div></td></tr><tr class="data-row"><td>7</td><td>Noack &amp; Company</td><td>–</td><td>300</td><td>–</td><td>300</td><td>0</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:100.0%;height:100%"></div></div><b>100.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>8</td><td>ATS</td><td>–</td><td>20</td><td>–</td><td>20</td><td>0</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:100.0%;height:100%"></div></div><b>100.0%</b></div></td></tr><tr class="data-row"><td>9</td><td>EW Tax and Valuation Group</td><td>–</td><td>200</td><td>–</td><td>200</td><td>0</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:100.0%;height:100%"></div></div><b>100.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>10</td><td>Bellamy &amp; Associates</td><td>–</td><td>97</td><td>–</td><td>100</td><td>3</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:97.0%;height:100%"></div></div><b>97.0%</b></div></td></tr><tr class="data-row"><td>11</td><td>Accounting Specialists of Asheville</td><td>–</td><td>150</td><td>–</td><td>155</td><td>5</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:96.8%;height:100%"></div></div><b>96.8%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>12</td><td>Bulletproof Tax</td><td>–</td><td>98</td><td>–</td><td>102</td><td>4</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:96.1%;height:100%"></div></div><b>96.1%</b></div></td></tr><tr class="data-row"><td>13</td><td>ZD Accounting Services</td><td>–</td><td>192</td><td>–</td><td>200</td><td>8</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:96.0%;height:100%"></div></div><b>96.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>14</td><td>Roberta A Otto CPA</td><td>–</td><td>476</td><td>–</td><td>500</td><td>24</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:95.2%;height:100%"></div></div><b>95.2%</b></div></td></tr><tr class="data-row"><td>15</td><td>Bookkeeping Solutions</td><td>–</td><td>95</td><td>–</td><td>100</td><td>5</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:95.0%;height:100%"></div></div><b>95.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>16</td><td>Leading Edge Financial</td><td>–</td><td>93</td><td>–</td><td>100</td><td>7</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:93.0%;height:100%"></div></div><b>93.0%</b></div></td></tr><tr class="data-row"><td>17</td><td>BLUESKY WEALTH ADVISORS LLC</td><td>–</td><td>186</td><td>–</td><td>200</td><td>14</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:93.0%;height:100%"></div></div><b>93.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>18</td><td>Thomas &amp; Company CPA</td><td>–</td><td>325</td><td>–</td><td>350</td><td>25</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:92.9%;height:100%"></div></div><b>92.9%</b></div></td></tr><tr class="data-row"><td>19</td><td>Harbor Group</td><td>–</td><td>460</td><td>–</td><td>500</td><td>40</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:92.0%;height:100%"></div></div><b>92.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>20</td><td>Henry, Waters &amp; Associates</td><td>–</td><td>468</td><td>–</td><td>513</td><td>45</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:91.2%;height:100%"></div></div><b>91.2%</b></div></td></tr><tr class="data-row"><td>21</td><td>Lloyd &amp; Hodge</td><td>–</td><td>182</td><td>–</td><td>200</td><td>18</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:91.0%;height:100%"></div></div><b>91.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>22</td><td>Sarah Reames</td><td>–</td><td>91</td><td>–</td><td>100</td><td>9</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:91.0%;height:100%"></div></div><b>91.0%</b></div></td></tr><tr class="data-row"><td>23</td><td>Laufer CPA</td><td>–</td><td>94</td><td>–</td><td>104</td><td>10</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:90.4%;height:100%"></div></div><b>90.4%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>24</td><td>Gianno &amp; Freda CPAs &amp; Financial Center Inc</td><td>–</td><td>179</td><td>–</td><td>200</td><td>21</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:89.5%;height:100%"></div></div><b>89.5%</b></div></td></tr><tr class="data-row"><td>25</td><td>Daily Balance</td><td>–</td><td>223</td><td>–</td><td>250</td><td>27</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:89.2%;height:100%"></div></div><b>89.2%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>26</td><td>Pacific Financial Navigators</td><td>–</td><td>722</td><td>–</td><td>810</td><td>88</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:89.1%;height:100%"></div></div><b>89.1%</b></div></td></tr><tr class="data-row"><td>27</td><td>The Bottom Line, LLC</td><td>–</td><td>89</td><td>–</td><td>100</td><td>11</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:89.0%;height:100%"></div></div><b>89.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>28</td><td>Hamilton Advisory, PLLC</td><td>–</td><td>264</td><td>–</td><td>300</td><td>36</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:88.0%;height:100%"></div></div><b>88.0%</b></div></td></tr><tr class="data-row"><td>29</td><td>Triad Tax Advisors</td><td>–</td><td>350</td><td>–</td><td>400</td><td>50</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:87.5%;height:100%"></div></div><b>87.5%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>30</td><td>Platinum Tax Management</td><td>–</td><td>87</td><td>–</td><td>100</td><td>13</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:87.0%;height:100%"></div></div><b>87.0%</b></div></td></tr><tr class="data-row"><td>31</td><td>Mark Schwanbeck Tax Prep</td><td>–</td><td>87</td><td>–</td><td>100</td><td>13</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:87.0%;height:100%"></div></div><b>87.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>32</td><td>ROR Tax Professionals</td><td>–</td><td>525</td><td>–</td><td>605</td><td>80</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:86.8%;height:100%"></div></div><b>86.8%</b></div></td></tr><tr class="data-row"><td>33</td><td>Beckley &amp; Associates</td><td>–</td><td>94</td><td>–</td><td>109</td><td>15</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:86.2%;height:100%"></div></div><b>86.2%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>34</td><td>IRS Solutions Valencia, Inc.</td><td>–</td><td>86</td><td>–</td><td>100</td><td>14</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:86.0%;height:100%"></div></div><b>86.0%</b></div></td></tr><tr class="data-row"><td>35</td><td>Y10 Tax Solutions</td><td>–</td><td>86</td><td>–</td><td>100</td><td>14</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:86.0%;height:100%"></div></div><b>86.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>36</td><td>Associates in Accounting, CPA</td><td>–</td><td>170</td><td>–</td><td>200</td><td>30</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:85.0%;height:100%"></div></div><b>85.0%</b></div></td></tr><tr class="data-row"><td>37</td><td>Laurie Rust</td><td>–</td><td>85</td><td>–</td><td>100</td><td>15</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:85.0%;height:100%"></div></div><b>85.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>38</td><td>Rosenbaum Sobel Weinrub &amp; Burns</td><td>–</td><td>254</td><td>–</td><td>300</td><td>46</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:84.7%;height:100%"></div></div><b>84.7%</b></div></td></tr><tr class="data-row"><td>39</td><td>Aspyr Professional Group</td><td>–</td><td>337</td><td>–</td><td>400</td><td>63</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:84.2%;height:100%"></div></div><b>84.2%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>40</td><td>Tax Rite</td><td>–</td><td>421</td><td>–</td><td>500</td><td>79</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:84.2%;height:100%"></div></div><b>84.2%</b></div></td></tr><tr class="data-row"><td>41</td><td>JGT CPA Solutions, AC</td><td>–</td><td>83</td><td>–</td><td>100</td><td>17</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:83.0%;height:100%"></div></div><b>83.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>42</td><td>Carter CPA</td><td>–</td><td>252</td><td>–</td><td>305</td><td>53</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:82.6%;height:100%"></div></div><b>82.6%</b></div></td></tr><tr class="data-row"><td>43</td><td>Elite Accounting Services</td><td>–</td><td>85</td><td>–</td><td>103</td><td>18</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:82.5%;height:100%"></div></div><b>82.5%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>44</td><td>ProBooks</td><td>–</td><td>82</td><td>–</td><td>100</td><td>18</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:82.0%;height:100%"></div></div><b>82.0%</b></div></td></tr><tr class="data-row"><td>45</td><td>Hanlon CPA, LLC</td><td>–</td><td>245</td><td>–</td><td>300</td><td>55</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:81.7%;height:100%"></div></div><b>81.7%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>46</td><td>Richmond Services &amp; Associates</td><td>–</td><td>81</td><td>–</td><td>100</td><td>19</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:81.0%;height:100%"></div></div><b>81.0%</b></div></td></tr><tr class="data-row"><td>47</td><td>JACKSON CPA SERVICES</td><td>–</td><td>81</td><td>–</td><td>100</td><td>19</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:81.0%;height:100%"></div></div><b>81.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>48</td><td>KBI Consulting</td><td>–</td><td>402</td><td>–</td><td>500</td><td>98</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:80.4%;height:100%"></div></div><b>80.4%</b></div></td></tr><tr class="data-row"><td>49</td><td>Jing and Company</td><td>–</td><td>241</td><td>–</td><td>300</td><td>59</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:80.3%;height:100%"></div></div><b>80.3%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>50</td><td>James Financial Solutions</td><td>–</td><td>84</td><td>–</td><td>105</td><td>21</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:80.0%;height:100%"></div></div><b>80.0%</b></div></td></tr><tr class="data-row"><td>51</td><td>Williamson Tax &amp; Bookkeeping</td><td>–</td><td>80</td><td>–</td><td>100</td><td>20</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:80.0%;height:100%"></div></div><b>80.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>52</td><td>Be Tax LLC</td><td>–</td><td>80</td><td>–</td><td>100</td><td>20</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:80.0%;height:100%"></div></div><b>80.0%</b></div></td></tr><tr class="data-row"><td>53</td><td>Dreyer Luchetti McGuire</td><td>–</td><td>240</td><td>–</td><td>300</td><td>60</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:80.0%;height:100%"></div></div><b>80.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>54</td><td>Seaside Resources</td><td>–</td><td>369</td><td>–</td><td>465</td><td>96</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:79.4%;height:100%"></div></div><b>79.4%</b></div></td></tr><tr class="data-row"><td>55</td><td>CPA Teaches</td><td>–</td><td>119</td><td>–</td><td>150</td><td>31</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:79.3%;height:100%"></div></div><b>79.3%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>56</td><td>Blackhawk Accounting</td><td>–</td><td>78</td><td>–</td><td>100</td><td>22</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:78.0%;height:100%"></div></div><b>78.0%</b></div></td></tr><tr class="data-row"><td>57</td><td>Ascend Tax Advisory, &amp; Accounting Services</td><td>–</td><td>81</td><td>–</td><td>105</td><td>24</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:77.1%;height:100%"></div></div><b>77.1%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>58</td><td>Custom Accounting CPA</td><td>–</td><td>81</td><td>–</td><td>105</td><td>24</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:77.1%;height:100%"></div></div><b>77.1%</b></div></td></tr><tr class="data-row"><td>59</td><td>Garry A Jones &amp; Associates</td><td>–</td><td>80</td><td>–</td><td>105</td><td>25</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:76.2%;height:100%"></div></div><b>76.2%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>60</td><td>Sherwood Tax</td><td>–</td><td>76</td><td>–</td><td>100</td><td>24</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:76.0%;height:100%"></div></div><b>76.0%</b></div></td></tr><tr class="data-row"><td>61</td><td>E&amp;M Tax Service</td><td>–</td><td>76</td><td>–</td><td>100</td><td>24</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:76.0%;height:100%"></div></div><b>76.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>62</td><td>Embarkment Tax Services</td><td>–</td><td>132</td><td>–</td><td>175</td><td>43</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:75.4%;height:100%"></div></div><b>75.4%</b></div></td></tr><tr class="data-row"><td>63</td><td>TJ Casey</td><td>–</td><td>113</td><td>–</td><td>150</td><td>37</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:75.3%;height:100%"></div></div><b>75.3%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>64</td><td>Joshua F. Cohen, CPA Inc.</td><td>–</td><td>75</td><td>–</td><td>100</td><td>25</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:75.0%;height:100%"></div></div><b>75.0%</b></div></td></tr><tr class="data-row"><td>65</td><td>Whelan Advisory Group</td><td>–</td><td>75</td><td>–</td><td>100</td><td>25</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:75.0%;height:100%"></div></div><b>75.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>66</td><td>CPA Financial Advantage</td><td>–</td><td>672</td><td>–</td><td>900</td><td>228</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:74.7%;height:100%"></div></div><b>74.7%</b></div></td></tr><tr class="data-row"><td>67</td><td>JCW Tax &amp; Accounting</td><td>–</td><td>530</td><td>–</td><td>710</td><td>180</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:74.6%;height:100%"></div></div><b>74.6%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>68</td><td>Latitude Tax</td><td>–</td><td>223</td><td>–</td><td>300</td><td>77</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:74.3%;height:100%"></div></div><b>74.3%</b></div></td></tr><tr class="data-row"><td>69</td><td>Diehl CPA LLC</td><td>–</td><td>185</td><td>–</td><td>250</td><td>65</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:74.0%;height:100%"></div></div><b>74.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>70</td><td>Michalik &amp; Daniels, Inc</td><td>–</td><td>77</td><td>–</td><td>105</td><td>28</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:73.3%;height:100%"></div></div><b>73.3%</b></div></td></tr><tr class="data-row"><td>71</td><td>Victor O. Okoye, CPA,</td><td>–</td><td>77</td><td>–</td><td>105</td><td>28</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:73.3%;height:100%"></div></div><b>73.3%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>72</td><td>Ledgerly</td><td>–</td><td>73</td><td>–</td><td>100</td><td>27</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:73.0%;height:100%"></div></div><b>73.0%</b></div></td></tr><tr class="data-row"><td>73</td><td>Bran Accounting</td><td>–</td><td>73</td><td>–</td><td>100</td><td>27</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:73.0%;height:100%"></div></div><b>73.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>74</td><td>Go-Pro Tax &amp; Accounting</td><td>–</td><td>76</td><td>–</td><td>105</td><td>29</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:72.4%;height:100%"></div></div><b>72.4%</b></div></td></tr><tr class="data-row"><td>75</td><td>Duncan &amp; Associates</td><td>–</td><td>507</td><td>–</td><td>700</td><td>193</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:72.4%;height:100%"></div></div><b>72.4%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>76</td><td>The Jones CPA Group</td><td>–</td><td>365</td><td>–</td><td>505</td><td>140</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:72.3%;height:100%"></div></div><b>72.3%</b></div></td></tr><tr class="data-row"><td>77</td><td>Cerner Capital Management LLC</td><td>–</td><td>72</td><td>–</td><td>100</td><td>28</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:72.0%;height:100%"></div></div><b>72.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>78</td><td>SBS CPA Group</td><td>–</td><td>72</td><td>–</td><td>100</td><td>28</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:72.0%;height:100%"></div></div><b>72.0%</b></div></td></tr><tr class="data-row"><td>79</td><td>Wills &amp; Associates (CHILD)</td><td>–</td><td>359</td><td>–</td><td>500</td><td>141</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:71.8%;height:100%"></div></div><b>71.8%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>80</td><td>Fire First Tax</td><td>–</td><td>148</td><td>–</td><td>208</td><td>60</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:71.2%;height:100%"></div></div><b>71.2%</b></div></td></tr><tr class="data-row"><td>81</td><td>ABL&amp;Co.</td><td>–</td><td>288</td><td>–</td><td>405</td><td>117</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:71.1%;height:100%"></div></div><b>71.1%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>82</td><td>Pfenning Accountancy PC</td><td>–</td><td>71</td><td>–</td><td>100</td><td>29</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:71.0%;height:100%"></div></div><b>71.0%</b></div></td></tr><tr class="data-row"><td>83</td><td>Carter Cook CPAs, PLLC</td><td>–</td><td>71</td><td>–</td><td>100</td><td>29</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:71.0%;height:100%"></div></div><b>71.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>84</td><td>Golden State Accounting (CHILD)</td><td>–</td><td>177</td><td>–</td><td>250</td><td>73</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:70.8%;height:100%"></div></div><b>70.8%</b></div></td></tr><tr class="data-row"><td>85</td><td>CPA Help Now</td><td>–</td><td>106</td><td>–</td><td>150</td><td>44</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:70.7%;height:100%"></div></div><b>70.7%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>86</td><td>Wealth Alliance Tax &amp; Financial Services, LLC</td><td>–</td><td>251</td><td>–</td><td>355</td><td>104</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:70.7%;height:100%"></div></div><b>70.7%</b></div></td></tr><tr class="data-row"><td>87</td><td>Balanced Equation</td><td>–</td><td>72</td><td>–</td><td>102</td><td>30</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:70.6%;height:100%"></div></div><b>70.6%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>88</td><td>Integrated SBA</td><td>–</td><td>140</td><td>–</td><td>200</td><td>60</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:70.0%;height:100%"></div></div><b>70.0%</b></div></td></tr><tr class="data-row"><td>89</td><td>Travel Nurse Tax</td><td>–</td><td>906</td><td>–</td><td>1300</td><td>394</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:69.7%;height:100%"></div></div><b>69.7%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>90</td><td>ElevatedCPA</td><td>–</td><td>488</td><td>–</td><td>700</td><td>212</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:69.7%;height:100%"></div></div><b>69.7%</b></div></td></tr><tr class="data-row"><td>91</td><td>SFBG OpCo LLC</td><td>–</td><td>139</td><td>–</td><td>200</td><td>61</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:69.5%;height:100%"></div></div><b>69.5%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>92</td><td>Tosha Inman CPA</td><td>–</td><td>278</td><td>–</td><td>400</td><td>122</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:69.5%;height:100%"></div></div><b>69.5%</b></div></td></tr><tr class="data-row"><td>93</td><td>The Onyx CPA Group, Inc.</td><td>–</td><td>69</td><td>–</td><td>100</td><td>31</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:69.0%;height:100%"></div></div><b>69.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>94</td><td>Burkart &amp; Stevens, CPAs and Advisors</td><td>–</td><td>69</td><td>–</td><td>100</td><td>31</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:69.0%;height:100%"></div></div><b>69.0%</b></div></td></tr><tr class="data-row"><td>95</td><td>Sas Prinzivalli CPA PA</td><td>–</td><td>205</td><td>–</td><td>300</td><td>95</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:68.3%;height:100%"></div></div><b>68.3%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>96</td><td>Steven W Anderson CPA LLC</td><td>–</td><td>204</td><td>–</td><td>300</td><td>96</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:68.0%;height:100%"></div></div><b>68.0%</b></div></td></tr><tr class="data-row"><td>97</td><td>Privity CPA Partners</td><td>–</td><td>136</td><td>–</td><td>200</td><td>64</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:68.0%;height:100%"></div></div><b>68.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>98</td><td>Rea, Whitehead &amp; Associates</td><td>–</td><td>272</td><td>–</td><td>400</td><td>128</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:68.0%;height:100%"></div></div><b>68.0%</b></div></td></tr><tr class="data-row"><td>99</td><td>Stonehaven Wealth &amp; Tax Solutions, LLC</td><td>–</td><td>67</td><td>–</td><td>100</td><td>33</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:67.0%;height:100%"></div></div><b>67.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>100</td><td>Hill and Poppy, PC (PARTNER)</td><td>–</td><td>33</td><td>–</td><td>50</td><td>17</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:66.0%;height:100%"></div></div><b>66.0%</b></div></td></tr><tr class="data-row"><td>101</td><td>Chaney &amp; Moul CPAs</td><td>–</td><td>132</td><td>–</td><td>200</td><td>68</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:66.0%;height:100%"></div></div><b>66.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>102</td><td>Island Tides Accounting</td><td>–</td><td>66</td><td>–</td><td>100</td><td>34</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:66.0%;height:100%"></div></div><b>66.0%</b></div></td></tr><tr class="data-row"><td>103</td><td>Stiles CPA</td><td>–</td><td>66</td><td>–</td><td>100</td><td>34</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:66.0%;height:100%"></div></div><b>66.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>104</td><td>Blue Ocean Capital</td><td>–</td><td>65</td><td>–</td><td>100</td><td>35</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:65.0%;height:100%"></div></div><b>65.0%</b></div></td></tr><tr class="data-row"><td>105</td><td>Detterbeck Wealth Management</td><td>–</td><td>65</td><td>–</td><td>100</td><td>35</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:65.0%;height:100%"></div></div><b>65.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>106</td><td>Weinzapfel &amp; Co</td><td>–</td><td>197</td><td>–</td><td>304</td><td>107</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:64.8%;height:100%"></div></div><b>64.8%</b></div></td></tr><tr class="data-row"><td>107</td><td>RE-MMAP Inc.</td><td>–</td><td>193</td><td>–</td><td>300</td><td>107</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:64.3%;height:100%"></div></div><b>64.3%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>108</td><td>Accounting Made Accessible</td><td>–</td><td>64</td><td>–</td><td>100</td><td>36</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:64.0%;height:100%"></div></div><b>64.0%</b></div></td></tr><tr class="data-row"><td>109</td><td>East Coast Advisors LLC</td><td>–</td><td>64</td><td>–</td><td>100</td><td>36</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:64.0%;height:100%"></div></div><b>64.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>110</td><td>Firestone Tax &amp; Accounting Services (CHILD)</td><td>–</td><td>890</td><td>–</td><td>1400</td><td>510</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:63.6%;height:100%"></div></div><b>63.6%</b></div></td></tr><tr class="data-row"><td>111</td><td>Chester &amp; Daniels</td><td>–</td><td>127</td><td>–</td><td>200</td><td>73</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:63.5%;height:100%"></div></div><b>63.5%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>112</td><td>Schroeder CPA</td><td>–</td><td>161</td><td>–</td><td>255</td><td>94</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:63.1%;height:100%"></div></div><b>63.1%</b></div></td></tr><tr class="data-row"><td>113</td><td>Coastside Tax Consultants</td><td>–</td><td>189</td><td>–</td><td>300</td><td>111</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:63.0%;height:100%"></div></div><b>63.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>114</td><td>One-Rubio Solutions</td><td>–</td><td>63</td><td>–</td><td>100</td><td>37</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:63.0%;height:100%"></div></div><b>63.0%</b></div></td></tr><tr class="data-row"><td>115</td><td>Mansfield CPA</td><td>–</td><td>63</td><td>–</td><td>100</td><td>37</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:63.0%;height:100%"></div></div><b>63.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>116</td><td>My Franchise CPAs</td><td>–</td><td>97</td><td>–</td><td>155</td><td>58</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:62.6%;height:100%"></div></div><b>62.6%</b></div></td></tr><tr class="data-row"><td>117</td><td>Walke &amp; Associates</td><td>–</td><td>125</td><td>–</td><td>200</td><td>75</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:62.5%;height:100%"></div></div><b>62.5%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>118</td><td>Hildreth &amp; Puga CPA</td><td>–</td><td>249</td><td>–</td><td>400</td><td>151</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:62.3%;height:100%"></div></div><b>62.3%</b></div></td></tr><tr class="data-row"><td>119</td><td>Hoboken Financial Services LLC</td><td>–</td><td>62</td><td>–</td><td>100</td><td>38</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:62.0%;height:100%"></div></div><b>62.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>120</td><td>John Sheeley Inc</td><td>–</td><td>62</td><td>–</td><td>100</td><td>38</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:62.0%;height:100%"></div></div><b>62.0%</b></div></td></tr><tr class="data-row"><td>121</td><td>Abacus Tax &amp; Accounting</td><td>–</td><td>62</td><td>–</td><td>100</td><td>38</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:62.0%;height:100%"></div></div><b>62.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>122</td><td>Sound Profit Inc.</td><td>–</td><td>62</td><td>–</td><td>100</td><td>38</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:62.0%;height:100%"></div></div><b>62.0%</b></div></td></tr><tr class="data-row"><td>123</td><td>HRX CPAs</td><td>–</td><td>62</td><td>–</td><td>100</td><td>38</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:62.0%;height:100%"></div></div><b>62.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>124</td><td>Blue Lake Tax</td><td>–</td><td>63</td><td>–</td><td>102</td><td>39</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:61.8%;height:100%"></div></div><b>61.8%</b></div></td></tr><tr class="data-row"><td>125</td><td>Alley &amp; Company,</td><td>–</td><td>123</td><td>–</td><td>200</td><td>77</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:61.5%;height:100%"></div></div><b>61.5%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>126</td><td>Lori A Ream LLC</td><td>–</td><td>61</td><td>–</td><td>100</td><td>39</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:61.0%;height:100%"></div></div><b>61.0%</b></div></td></tr><tr class="data-row"><td>127</td><td>Just One Honest Number, PLLC</td><td>–</td><td>61</td><td>–</td><td>100</td><td>39</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:61.0%;height:100%"></div></div><b>61.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>128</td><td>CFG Tax Solutions</td><td>–</td><td>62</td><td>–</td><td>102</td><td>40</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:60.8%;height:100%"></div></div><b>60.8%</b></div></td></tr><tr class="data-row"><td>129</td><td>Grand Tax Advisors LLC</td><td>–</td><td>60</td><td>–</td><td>100</td><td>40</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:60.0%;height:100%"></div></div><b>60.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>130</td><td>Number Nexus, LLC</td><td>–</td><td>60</td><td>–</td><td>100</td><td>40</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:60.0%;height:100%"></div></div><b>60.0%</b></div></td></tr><tr class="data-row"><td>131</td><td>Coy Tax Solutions</td><td>–</td><td>60</td><td>–</td><td>100</td><td>40</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:60.0%;height:100%"></div></div><b>60.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>132</td><td>Dark Horse CPAs</td><td>–</td><td>1187</td><td>–</td><td>2000</td><td>813</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:59.4%;height:100%"></div></div><b>59.4%</b></div></td></tr><tr class="data-row"><td>133</td><td>Caldwell CPA</td><td>–</td><td>148</td><td>–</td><td>250</td><td>102</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:59.2%;height:100%"></div></div><b>59.2%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>134</td><td>NC Corp</td><td>–</td><td>62</td><td>–</td><td>105</td><td>43</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:59.0%;height:100%"></div></div><b>59.0%</b></div></td></tr><tr class="data-row"><td>135</td><td>Expert Tax &amp; Trust</td><td>–</td><td>236</td><td>–</td><td>400</td><td>164</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:59.0%;height:100%"></div></div><b>59.0%</b></div></td></tr><tr style="background:#B4F7CA" class="data-row"><td>136</td><td>PILLAR 3</td><td>–</td><td>59</td><td>–</td><td>100</td><td>41</td><td><div style="display:flex;align-items:center;gap:6px"><div style="background:#e5e7eb;border-radius:4px;height:14px;min-width:80px;overflow:hidden"><div style="background:#1CE49B;width:59.0%;height:100%"></div></div><b>59.0%</b></div></td></tr>
-    </tbody>
-  </table>
-  <div class="footer">Generated 2026-06-01 &middot; Juno Tax &middot; Returns Utilization Report &middot; 136 of 541 companies shown</div>
+  <div class="table-wrap">
+    <table id="mainTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Company</th>
+          <th>Δ Used</th>
+          <th>Used</th>
+          <th>Δ Purchased</th>
+          <th>Purchased</th>
+          <th>Remaining</th>
+          <th>Utilization</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">1</td>
+      <td style="padding:8px 12px;font-weight:500">Common Cent$ Business</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">133</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">-33</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:100%;height:100%;background:#EF4444;border-radius:4px"></div>
+      </div>
+      <strong>133.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">2</td>
+      <td style="padding:8px 12px;font-weight:500">Allied Tax Advisors</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">101</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">-1</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:100%;height:100%;background:#F59E0B;border-radius:4px"></div>
+      </div>
+      <strong>101.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">3</td>
+      <td style="padding:8px 12px;font-weight:500">Edler Zain</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">101</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">-1</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:100%;height:100%;background:#F59E0B;border-radius:4px"></div>
+      </div>
+      <strong>101.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">4</td>
+      <td style="padding:8px 12px;font-weight:500">Richmond Services & Associates</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">0</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:100.0%;height:100%;background:#F59E0B;border-radius:4px"></div>
+      </div>
+      <strong>100.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">5</td>
+      <td style="padding:8px 12px;font-weight:500">McAdams Tax Group, LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">0</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:100.0%;height:100%;background:#F59E0B;border-radius:4px"></div>
+      </div>
+      <strong>100.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">6</td>
+      <td style="padding:8px 12px;font-weight:500">Proby Tax</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">102</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">102</td>
+      <td style="padding:8px 12px;text-align:center">0</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:100.0%;height:100%;background:#F59E0B;border-radius:4px"></div>
+      </div>
+      <strong>100.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">7</td>
+      <td style="padding:8px 12px;font-weight:500">Noack & Company</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center">0</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:100.0%;height:100%;background:#F59E0B;border-radius:4px"></div>
+      </div>
+      <strong>100.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">8</td>
+      <td style="padding:8px 12px;font-weight:500">ATS</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">20</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">20</td>
+      <td style="padding:8px 12px;text-align:center">0</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:100.0%;height:100%;background:#F59E0B;border-radius:4px"></div>
+      </div>
+      <strong>100.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">9</td>
+      <td style="padding:8px 12px;font-weight:500">Kelly R McDonald, CPA Cornerstone Professional Accountants, PC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">165</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">170</td>
+      <td style="padding:8px 12px;text-align:center">5</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:97.1%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>97.1%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">10</td>
+      <td style="padding:8px 12px;font-weight:500">Bellamy & Associates</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">97</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">3</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:97.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>97.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">11</td>
+      <td style="padding:8px 12px;font-weight:500">Accounting Specialists of Asheville</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">150</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">155</td>
+      <td style="padding:8px 12px;text-align:center">5</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:96.8%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>96.8%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">12</td>
+      <td style="padding:8px 12px;font-weight:500">Bulletproof Tax</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">98</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">102</td>
+      <td style="padding:8px 12px;text-align:center">4</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:96.1%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>96.1%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">13</td>
+      <td style="padding:8px 12px;font-weight:500">ZD Accounting Services</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">192</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">8</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:96.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>96.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">14</td>
+      <td style="padding:8px 12px;font-weight:500">Roberta A Otto CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">476</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">500</td>
+      <td style="padding:8px 12px;text-align:center">24</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:95.2%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>95.2%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">15</td>
+      <td style="padding:8px 12px;font-weight:500">Bookkeeping Solutions</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">95</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">5</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:95.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>95.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">16</td>
+      <td style="padding:8px 12px;font-weight:500">Leading Edge Financial</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">94</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">6</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:94.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>94.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">17</td>
+      <td style="padding:8px 12px;font-weight:500">BLUESKY WEALTH ADVISORS LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">186</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">14</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:93.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>93.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">18</td>
+      <td style="padding:8px 12px;font-weight:500">Thomas & Company CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">325</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">350</td>
+      <td style="padding:8px 12px;text-align:center">25</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:92.9%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>92.9%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">19</td>
+      <td style="padding:8px 12px;font-weight:500">Harbor Group</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">460</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">500</td>
+      <td style="padding:8px 12px;text-align:center">40</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:92.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>92.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">20</td>
+      <td style="padding:8px 12px;font-weight:500">Henry, Waters & Associates</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">469</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">513</td>
+      <td style="padding:8px 12px;text-align:center">44</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:91.4%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>91.4%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">21</td>
+      <td style="padding:8px 12px;font-weight:500">Lloyd & Hodge</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">182</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">18</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:91.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>91.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">22</td>
+      <td style="padding:8px 12px;font-weight:500">Sarah Reames</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">91</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">9</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:91.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>91.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">23</td>
+      <td style="padding:8px 12px;font-weight:500">Laufer CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">94</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">104</td>
+      <td style="padding:8px 12px;text-align:center">10</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:90.4%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>90.4%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">24</td>
+      <td style="padding:8px 12px;font-weight:500">Daily Balance</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">225</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">250</td>
+      <td style="padding:8px 12px;text-align:center">25</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:90.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>90.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">25</td>
+      <td style="padding:8px 12px;font-weight:500">Gianno & Freda CPAs & Financial Center Inc</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">179</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">21</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:89.5%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>89.5%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">26</td>
+      <td style="padding:8px 12px;font-weight:500">Pacific Financial Navigators</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">725</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">810</td>
+      <td style="padding:8px 12px;text-align:center">85</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:89.5%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>89.5%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">27</td>
+      <td style="padding:8px 12px;font-weight:500">The Bottom Line, LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">89</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">11</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:89.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>89.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">28</td>
+      <td style="padding:8px 12px;font-weight:500">Hamilton Advisory, PLLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">266</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center">34</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:88.7%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>88.7%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">29</td>
+      <td style="padding:8px 12px;font-weight:500">Triad Tax Advisors</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">351</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">400</td>
+      <td style="padding:8px 12px;text-align:center">49</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:87.8%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>87.8%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">30</td>
+      <td style="padding:8px 12px;font-weight:500">Mark Schwanbeck Tax Prep</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">87</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">13</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:87.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>87.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">31</td>
+      <td style="padding:8px 12px;font-weight:500">Platinum Tax Management</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">87</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">13</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:87.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>87.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">32</td>
+      <td style="padding:8px 12px;font-weight:500">ROR Tax Professionals</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">525</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">605</td>
+      <td style="padding:8px 12px;text-align:center">80</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:86.8%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>86.8%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">33</td>
+      <td style="padding:8px 12px;font-weight:500">Beckley & Associates</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">94</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">109</td>
+      <td style="padding:8px 12px;text-align:center">15</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:86.2%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>86.2%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">34</td>
+      <td style="padding:8px 12px;font-weight:500">IRS Solutions Valencia, Inc.</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">86</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">14</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:86.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>86.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">35</td>
+      <td style="padding:8px 12px;font-weight:500">Y10 Tax Solutions</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">86</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">14</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:86.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>86.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">36</td>
+      <td style="padding:8px 12px;font-weight:500">Associates in Accounting, CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">170</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">30</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:85.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>85.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">37</td>
+      <td style="padding:8px 12px;font-weight:500">Laurie Rust</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">85</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">15</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:85.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>85.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">38</td>
+      <td style="padding:8px 12px;font-weight:500">Rosenbaum Sobel Weinrub & Burns</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">254</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center">46</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:84.7%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>84.7%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">39</td>
+      <td style="padding:8px 12px;font-weight:500">Aspyr Professional Group</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">338</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">400</td>
+      <td style="padding:8px 12px;text-align:center">62</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:84.5%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>84.5%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">40</td>
+      <td style="padding:8px 12px;font-weight:500">Tax Rite</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">421</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">500</td>
+      <td style="padding:8px 12px;text-align:center">79</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:84.2%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>84.2%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">41</td>
+      <td style="padding:8px 12px;font-weight:500">JGT CPA Solutions, AC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">83</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">17</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:83.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>83.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">42</td>
+      <td style="padding:8px 12px;font-weight:500">Carter CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">252</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">305</td>
+      <td style="padding:8px 12px;text-align:center">53</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:82.6%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>82.6%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">43</td>
+      <td style="padding:8px 12px;font-weight:500">Elite Accounting Services</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">85</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">103</td>
+      <td style="padding:8px 12px;text-align:center">18</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:82.5%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>82.5%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">44</td>
+      <td style="padding:8px 12px;font-weight:500">ProBooks</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">82</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">18</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:82.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>82.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">45</td>
+      <td style="padding:8px 12px;font-weight:500">Williamson Tax & Bookkeeping</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">82</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">18</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:82.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>82.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">46</td>
+      <td style="padding:8px 12px;font-weight:500">Hanlon CPA, LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">246</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center">54</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:82.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>82.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">47</td>
+      <td style="padding:8px 12px;font-weight:500">JACKSON CPA SERVICES</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">81</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">19</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:81.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>81.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">48</td>
+      <td style="padding:8px 12px;font-weight:500">KBI Consulting</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">403</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">500</td>
+      <td style="padding:8px 12px;text-align:center">97</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:80.6%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>80.6%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">49</td>
+      <td style="padding:8px 12px;font-weight:500">Jing and Company</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">241</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center">59</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:80.3%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>80.3%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">50</td>
+      <td style="padding:8px 12px;font-weight:500">Dreyer Luchetti McGuire</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">241</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center">59</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:80.3%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>80.3%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">51</td>
+      <td style="padding:8px 12px;font-weight:500">Sherwood Tax</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">80</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">20</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:80.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>80.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">52</td>
+      <td style="padding:8px 12px;font-weight:500">James Financial Solutions</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">84</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">105</td>
+      <td style="padding:8px 12px;text-align:center">21</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:80.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>80.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">53</td>
+      <td style="padding:8px 12px;font-weight:500">Be Tax LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">80</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">20</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:80.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>80.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">54</td>
+      <td style="padding:8px 12px;font-weight:500">Seaside Resources</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">370</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">465</td>
+      <td style="padding:8px 12px;text-align:center">95</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:79.6%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>79.6%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">55</td>
+      <td style="padding:8px 12px;font-weight:500">CPA Teaches</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">119</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">150</td>
+      <td style="padding:8px 12px;text-align:center">31</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:79.3%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>79.3%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">56</td>
+      <td style="padding:8px 12px;font-weight:500">Garry A Jones & Associates</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">83</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">105</td>
+      <td style="padding:8px 12px;text-align:center">22</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:79.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>79.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">57</td>
+      <td style="padding:8px 12px;font-weight:500">Blackhawk Accounting</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">78</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">22</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:78.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>78.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">58</td>
+      <td style="padding:8px 12px;font-weight:500">Ascend Tax Advisory, & Accounting Services</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">81</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">105</td>
+      <td style="padding:8px 12px;text-align:center">24</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:77.1%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>77.1%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">59</td>
+      <td style="padding:8px 12px;font-weight:500">Custom Accounting CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">81</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">105</td>
+      <td style="padding:8px 12px;text-align:center">24</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:77.1%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>77.1%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">60</td>
+      <td style="padding:8px 12px;font-weight:500">E&M Tax Service</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">77</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">23</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:77.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>77.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">61</td>
+      <td style="padding:8px 12px;font-weight:500">TJ Casey</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">114</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">150</td>
+      <td style="padding:8px 12px;text-align:center">36</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:76.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>76.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">62</td>
+      <td style="padding:8px 12px;font-weight:500">Embarkment Tax Services</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">132</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">175</td>
+      <td style="padding:8px 12px;text-align:center">43</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:75.4%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>75.4%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">63</td>
+      <td style="padding:8px 12px;font-weight:500">CPA Financial Advantage </td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">676</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">900</td>
+      <td style="padding:8px 12px;text-align:center">224</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:75.1%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>75.1%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">64</td>
+      <td style="padding:8px 12px;font-weight:500">Joshua F. Cohen, CPA Inc.</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">75</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">25</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:75.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>75.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">65</td>
+      <td style="padding:8px 12px;font-weight:500">Whelan Advisory Group</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">75</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">25</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:75.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>75.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">66</td>
+      <td style="padding:8px 12px;font-weight:500">JCW Tax & Accounting</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">532</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">710</td>
+      <td style="padding:8px 12px;text-align:center">178</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:74.9%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>74.9%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">67</td>
+      <td style="padding:8px 12px;font-weight:500">Latitude Tax</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">223</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center">77</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:74.3%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>74.3%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">68</td>
+      <td style="padding:8px 12px;font-weight:500">Diehl CPA LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">185</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">250</td>
+      <td style="padding:8px 12px;text-align:center">65</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:74.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>74.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">69</td>
+      <td style="padding:8px 12px;font-weight:500">Michalik & Daniels, Inc</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">77</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">105</td>
+      <td style="padding:8px 12px;text-align:center">28</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:73.3%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>73.3%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">70</td>
+      <td style="padding:8px 12px;font-weight:500">Victor O. Okoye, CPA,</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">77</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">105</td>
+      <td style="padding:8px 12px;text-align:center">28</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:73.3%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>73.3%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">71</td>
+      <td style="padding:8px 12px;font-weight:500">Ledgerly</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">73</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">27</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:73.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>73.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">72</td>
+      <td style="padding:8px 12px;font-weight:500">Carter Cook CPAs, PLLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">73</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">27</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:73.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>73.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">73</td>
+      <td style="padding:8px 12px;font-weight:500">Bran Accounting</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">73</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">27</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:73.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>73.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">74</td>
+      <td style="padding:8px 12px;font-weight:500">Duncan & Associates</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">510</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">700</td>
+      <td style="padding:8px 12px;text-align:center">190</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:72.9%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>72.9%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">75</td>
+      <td style="padding:8px 12px;font-weight:500">Fire First Tax</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">151</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">208</td>
+      <td style="padding:8px 12px;text-align:center">57</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:72.6%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>72.6%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">76</td>
+      <td style="padding:8px 12px;font-weight:500">Go-Pro Tax & Accounting</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">76</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">105</td>
+      <td style="padding:8px 12px;text-align:center">29</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:72.4%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>72.4%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">77</td>
+      <td style="padding:8px 12px;font-weight:500">The Jones CPA Group</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">365</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">505</td>
+      <td style="padding:8px 12px;text-align:center">140</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:72.3%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>72.3%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">78</td>
+      <td style="padding:8px 12px;font-weight:500">Cerner Capital Management LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">72</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">28</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:72.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>72.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">79</td>
+      <td style="padding:8px 12px;font-weight:500">Wills & Associates (CHILD)</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">360</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">500</td>
+      <td style="padding:8px 12px;text-align:center">140</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:72.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>72.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">80</td>
+      <td style="padding:8px 12px;font-weight:500">SBS CPA Group</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">72</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">28</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:72.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>72.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">81</td>
+      <td style="padding:8px 12px;font-weight:500">ElevatedCPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">501</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">700</td>
+      <td style="padding:8px 12px;text-align:center">199</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:71.6%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>71.6%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">82</td>
+      <td style="padding:8px 12px;font-weight:500">ABL&Co.</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">288</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">405</td>
+      <td style="padding:8px 12px;text-align:center">117</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:71.1%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>71.1%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">83</td>
+      <td style="padding:8px 12px;font-weight:500">Pfenning Accountancy PC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">71</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">29</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:71.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>71.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">84</td>
+      <td style="padding:8px 12px;font-weight:500">Golden State Accounting (CHILD)</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">177</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">250</td>
+      <td style="padding:8px 12px;text-align:center">73</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:70.8%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>70.8%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">85</td>
+      <td style="padding:8px 12px;font-weight:500">CPA Help Now</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">106</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">150</td>
+      <td style="padding:8px 12px;text-align:center">44</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:70.7%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>70.7%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">86</td>
+      <td style="padding:8px 12px;font-weight:500">Wealth Alliance Tax & Financial Services, LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">251</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">355</td>
+      <td style="padding:8px 12px;text-align:center">104</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:70.7%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>70.7%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">87</td>
+      <td style="padding:8px 12px;font-weight:500">Balanced Equation</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">72</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">102</td>
+      <td style="padding:8px 12px;text-align:center">30</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:70.6%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>70.6%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">88</td>
+      <td style="padding:8px 12px;font-weight:500">Integrated SBA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">140</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">60</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:70.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>70.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">89</td>
+      <td style="padding:8px 12px;font-weight:500">Sas Prinzivalli CPA PA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">210</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center">90</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:70.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>70.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">90</td>
+      <td style="padding:8px 12px;font-weight:500">Travel Nurse Tax</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">909</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">1300</td>
+      <td style="padding:8px 12px;text-align:center">391</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:69.9%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>69.9%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">91</td>
+      <td style="padding:8px 12px;font-weight:500">SFBG OpCo LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">139</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">61</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:69.5%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>69.5%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">92</td>
+      <td style="padding:8px 12px;font-weight:500">Tosha Inman CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">278</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">400</td>
+      <td style="padding:8px 12px;text-align:center">122</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:69.5%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>69.5%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">93</td>
+      <td style="padding:8px 12px;font-weight:500">The Onyx CPA Group, Inc.</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">69</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">31</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:69.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>69.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">94</td>
+      <td style="padding:8px 12px;font-weight:500">Burkart & Stevens</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">69</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">31</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:69.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>69.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">95</td>
+      <td style="padding:8px 12px;font-weight:500">Rea, Whitehead & Associates</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">274</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">400</td>
+      <td style="padding:8px 12px;text-align:center">126</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:68.5%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>68.5%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">96</td>
+      <td style="padding:8px 12px;font-weight:500">Steven W Anderson CPA LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">204</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center">96</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:68.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>68.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">97</td>
+      <td style="padding:8px 12px;font-weight:500">Island Tides Accounting</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">68</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">32</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:68.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>68.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">98</td>
+      <td style="padding:8px 12px;font-weight:500">Privity CPA Partners</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">136</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">64</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:68.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>68.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">99</td>
+      <td style="padding:8px 12px;font-weight:500">Stonehaven Wealth & Tax Solutions, LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">67</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">33</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:67.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>67.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">100</td>
+      <td style="padding:8px 12px;font-weight:500">Hill and Poppy, PC (PARTNER)</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">33</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">50</td>
+      <td style="padding:8px 12px;text-align:center">17</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:66.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>66.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">101</td>
+      <td style="padding:8px 12px;font-weight:500">Chaney & Moul CPAs</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">132</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">68</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:66.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>66.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">102</td>
+      <td style="padding:8px 12px;font-weight:500">Stiles CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">66</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">34</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:66.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>66.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">103</td>
+      <td style="padding:8px 12px;font-weight:500">Weinzapfel & Co</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">198</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">304</td>
+      <td style="padding:8px 12px;text-align:center">106</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:65.1%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>65.1%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">104</td>
+      <td style="padding:8px 12px;font-weight:500">Hoboken Financial Services LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">65</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">35</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:65.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>65.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">105</td>
+      <td style="padding:8px 12px;font-weight:500">East Coast Advisors LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">65</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">35</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:65.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>65.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">106</td>
+      <td style="padding:8px 12px;font-weight:500">Blue Ocean Capital</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">65</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">35</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:65.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>65.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">107</td>
+      <td style="padding:8px 12px;font-weight:500">Detterbeck Wealth Management</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">65</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">35</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:65.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>65.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">108</td>
+      <td style="padding:8px 12px;font-weight:500">RE-MMAP Inc.</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">194</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center">106</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:64.7%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>64.7%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">109</td>
+      <td style="padding:8px 12px;font-weight:500">Walke & Associates</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">129</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">71</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:64.5%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>64.5%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">110</td>
+      <td style="padding:8px 12px;font-weight:500">Firestone Tax & Accounting Services (CHILD)</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">897</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">1400</td>
+      <td style="padding:8px 12px;text-align:center">503</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:64.1%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>64.1%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">111</td>
+      <td style="padding:8px 12px;font-weight:500">Accounting Made Accessible</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">64</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">36</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:64.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>64.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">112</td>
+      <td style="padding:8px 12px;font-weight:500">One-Rubio Solutions</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">64</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">36</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:64.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>64.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">113</td>
+      <td style="padding:8px 12px;font-weight:500">Chester & Daniels</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">128</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">72</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:64.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>64.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">114</td>
+      <td style="padding:8px 12px;font-weight:500">My Franchise CPAs</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">98</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">155</td>
+      <td style="padding:8px 12px;text-align:center">57</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:63.2%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>63.2%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">115</td>
+      <td style="padding:8px 12px;font-weight:500">Schroeder CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">161</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">255</td>
+      <td style="padding:8px 12px;text-align:center">94</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:63.1%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>63.1%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">116</td>
+      <td style="padding:8px 12px;font-weight:500">Coastside Tax Consultants</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">189</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">300</td>
+      <td style="padding:8px 12px;text-align:center">111</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:63.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>63.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">117</td>
+      <td style="padding:8px 12px;font-weight:500">Mansfield CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">63</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">37</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:63.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>63.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">118</td>
+      <td style="padding:8px 12px;font-weight:500">Hildreth & Puga CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">249</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">400</td>
+      <td style="padding:8px 12px;text-align:center">151</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:62.3%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>62.3%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">119</td>
+      <td style="padding:8px 12px;font-weight:500">John Sheeley Inc</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">62</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">38</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:62.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>62.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">120</td>
+      <td style="padding:8px 12px;font-weight:500">Abacus Tax & Accounting</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">62</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">38</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:62.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>62.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">121</td>
+      <td style="padding:8px 12px;font-weight:500">Sound Profit Inc.</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">62</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">38</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:62.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>62.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">122</td>
+      <td style="padding:8px 12px;font-weight:500">HRX CPAs</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">62</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">38</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:62.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>62.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">123</td>
+      <td style="padding:8px 12px;font-weight:500">Blue Lake Tax</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">63</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">102</td>
+      <td style="padding:8px 12px;text-align:center">39</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:61.8%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>61.8%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">124</td>
+      <td style="padding:8px 12px;font-weight:500">Alley & Company,</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">123</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">77</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:61.5%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>61.5%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">125</td>
+      <td style="padding:8px 12px;font-weight:500">Lori A Ream LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">61</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">39</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:61.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>61.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">126</td>
+      <td style="padding:8px 12px;font-weight:500">Just One Honest Number, PLLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">61</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">39</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:61.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>61.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">127</td>
+      <td style="padding:8px 12px;font-weight:500">Coy Tax Solutions</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">61</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">39</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:61.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>61.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">128</td>
+      <td style="padding:8px 12px;font-weight:500">CFG Tax Solutions</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">62</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">102</td>
+      <td style="padding:8px 12px;text-align:center">40</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:60.8%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>60.8%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">129</td>
+      <td style="padding:8px 12px;font-weight:500">Lynn CPAs LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">60</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">40</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:60.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>60.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">130</td>
+      <td style="padding:8px 12px;font-weight:500">NC Corp</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">63</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">105</td>
+      <td style="padding:8px 12px;text-align:center">42</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:60.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>60.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">131</td>
+      <td style="padding:8px 12px;font-weight:500">Grand Tax Advisors LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">60</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">40</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:60.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>60.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">132</td>
+      <td style="padding:8px 12px;font-weight:500">Number Nexus, LLC</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">60</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">40</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:60.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>60.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">133</td>
+      <td style="padding:8px 12px;font-weight:500">Dark Horse CPAs</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">1198</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">2000</td>
+      <td style="padding:8px 12px;text-align:center">802</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:59.9%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>59.9%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">134</td>
+      <td style="padding:8px 12px;font-weight:500">RLH Tax Services</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">301</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">505</td>
+      <td style="padding:8px 12px;text-align:center">204</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:59.6%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>59.6%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">135</td>
+      <td style="padding:8px 12px;font-weight:500">Caldwell CPA</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">149</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">250</td>
+      <td style="padding:8px 12px;text-align:center">101</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:59.6%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>59.6%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">136</td>
+      <td style="padding:8px 12px;font-weight:500">PILLAR 3</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">59</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">100</td>
+      <td style="padding:8px 12px;text-align:center">41</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:59.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>59.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:white">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">137</td>
+      <td style="padding:8px 12px;font-weight:500">Expert Tax & Trust</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">236</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">400</td>
+      <td style="padding:8px 12px;text-align:center">164</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:59.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>59.0%</strong>
+    </div></td>
+    </tr>
+<tr style="background:#B4F7CA">
+      <td style="padding:8px 12px;color:#6B7280;font-size:13px">138</td>
+      <td style="padding:8px 12px;font-weight:500">Stride</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">118</td>
+      <td style="padding:8px 12px;text-align:center"><span style="color:#9CA3AF">&ndash;</span></td>
+      <td style="padding:8px 12px;text-align:center">200</td>
+      <td style="padding:8px 12px;text-align:center">82</td>
+      <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:8px">
+      <div style="width:80px;height:14px;background:#e5e7eb;border-radius:4px;overflow:hidden;flex-shrink:0">
+        <div style="width:59.0%;height:100%;background:#1CE49B;border-radius:4px"></div>
+      </div>
+      <strong>59.0%</strong>
+    </div></td>
+    </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
+<div class="footer">Generated 2026-06-08 &middot; Juno Tax &middot; Returns Utilization Report</div>
 <script>
-function filterTable(){
-  var input=document.getElementById('filterInput').value.toLowerCase();
-  var rows=document.getElementById('tableBody').getElementsByClassName('data-row');
-  for(var i=0;i<rows.length;i++){
-    rows[i].style.display=rows[i].cells[1].textContent.toLowerCase().includes(input)?'':'none';
+function filterTable() {
+  var q = document.getElementById('filterInput').value.toLowerCase();
+  var rows = document.getElementById('tableBody').getElementsByTagName('tr');
+  for (var i = 0; i < rows.length; i++) {
+    var name = rows[i].cells[1] ? rows[i].cells[1].textContent.toLowerCase() : '';
+    rows[i].style.display = name.indexOf(q) > -1 ? '' : 'none';
   }
 }
 </script>
